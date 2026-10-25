@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venkat's Portfolio — Security Engineer / SOC &amp; EDR Specialist</title>
+<meta name="description" content="Portfolio of Venkatesh Kumar — Security Engineer specializing in EDR, SOC operations, VAPT, and cloud security. CEH v11, SC-300, SC-900 certified.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ff003c%22>&gt;</text></svg>">
+</head>
+<body>
+
+<!-- scanline / crt overlay -->
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="logo"><span class="logo-red">the</span><span class="logo-white">Venkatesh</span><span class="cursor-blink">_</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-cmd="whoami">about</a>
+      <a href="#skills" data-cmd="ls">skills</a>
+      <a href="#experience" data-cmd="history">experience</a>
+      <a href="#certifications" data-cmd="cat">certs</a>
+      <a href="#freelance" data-cmd="man">freelance</a>
+      <a href="#contact" data-cmd="ssh">contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO / BANNER ================= -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <img src="./banner.jpg" alt="Venkatesh Kumar banner" class="hero-img" id="heroImg">
+    <div class="hero-fallback" id="heroFallback" aria-hidden="true"></div>
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="term-line"><span class="prompt">root@venkatesh:~$</span> <span id="typedLine" class="typed"></span><span class="cursor-blink">_</span></p>
+    <h1 class="hero-title">
+      <span class="hero-title-red">SECURITY</span>
+      <span class="hero-title-white">ENGINEER</span>
+    </h1>
+    <p class="hero-sub">EDR &amp; SOC Operations &nbsp;/&nbsp; VAPT &nbsp;/&nbsp; Cloud Security (AWS · Azure) &nbsp;/&nbsp; Endpoint Defense</p>
+    <div class="hero-tags">
+      <span class="tag">CEH v11</span>
+      <span class="tag">SC-300</span>
+      <span class="tag">SC-900</span>
+      <span class="tag">Kaspersky Next EDR</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-solid">Get In Touch</a>
+      <a href="#experience" class="btn btn-outline">View Experience</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <p class="section-cmd">$ whoami</p>
+  <div class="about-grid">
+    <div class="about-portrait-wrap">
+      <div class="about-portrait">
+        <img src="./portrait.png" alt="Portrait of Venkatesh Kumar" id="portraitImg">
+        <div class="portrait-fallback" id="portraitFallback" aria-hidden="true">PHOTO<br>4:3</div>
+      </div>
+      <div class="portrait-frame-tag">/home/venkatesh/id_photo.jpg</div>
+    </div>
+    <div class="about-text">
+      <h2 class="section-title"><span class="red">About</span> Me</h2>
+      <p>
+        I'm Venkatesh Kumar, a security-minded infrastructure engineer with close to
+        <strong class="white">4+ years</strong> of hands-on experience defending endpoints,
+        hardening identities, and keeping healthcare-grade systems online. My background
+        spans <strong class="white">EDR administration, patch management, and Microsoft 365
+        security</strong>, and I'm currently sharpening my edge toward offensive security —
+        VAPT, SOC operations, and firewall management — to operate on both sides of the
+        fence: build the wall, then know exactly how it gets breached.
+      </p>
+      <p>
+        I hold certifications across offensive and defensive security tracks
+        (<strong class="white">CEH v11, SC-300, SC-900, Kaspersky Next EDR</strong>), and I
+        genuinely enjoy the process of turning complex security concepts into practical,
+        repeatable playbooks — whether that's for a SOC dashboard or for someone prepping
+        for their next certification exam.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Years in Security &amp; Infra Support</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Active Certifications</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Enterprise Environments Secured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills">
+  <p class="section-cmd">$ ls -la /skills/</p>
+  <h2 class="section-title"><span class="red">Technical</span> Arsenal</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3 class="skill-cat">Endpoint &amp; EDR</h3>
+      <ul>
+        <li>Kaspersky Next EDR</li>
+        <li>Sophos Endpoint (in progress)</li>
+        <li>Patch &amp; Vulnerability Management</li>
+        <li>JAMF (in progress)</li>
+        <li>Threat Detection &amp; Response</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-cat">SOC &amp; Offensive Security</h3>
+      <ul>
+        <li>SOC Monitoring &amp; Triage</li>
+        <li>VAPT Fundamentals (CEH v11)</li>
+        <li>Incident Response Workflows</li>
+        <li>Log Analysis</li>
+        <li>Fortinet Firewall (in progress)</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-cat">Cloud &amp; Identity</h3>
+      <ul>
+        <li>Microsoft 365 Security</li>
+        <li>Azure AD / Entra ID (SC-300)</li>
+        <li>Security Fundamentals (SC-900)</li>
+        <li>AWS Security Basics (in progress)</li>
+        <li>Identity &amp; Access Management</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-cat">Infrastructure &amp; Support</h3>
+      <ul>
+        <li>Healthcare IT Infrastructure</li>
+        <li>Technical Support &amp; Escalations</li>
+        <li>Large-Scale Endpoint Management</li>
+        <li>Documentation &amp; SOPs</li>
+        <li>Cross-Team Troubleshooting</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <p class="section-cmd">$ history | tail -n 2</p>
+  <h2 class="section-title"><span class="red">Work</span> Experience</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-body">
+        <div class="timeline-head">
+          <h3>Technical Support Engineer</h3>
+          <span class="timeline-date">Current</span>
+        </div>
+        <p class="timeline-org">LTM &mdash; Healthcare Infrastructure</p>
+        <p>
+          Supporting critical healthcare IT infrastructure, focused on system reliability,
+          security hygiene, and rapid incident resolution in an environment where uptime
+          and data protection are non-negotiable.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-body">
+        <div class="timeline-head">
+          <h3>Technical Support Engineer</h3>
+          <span class="timeline-date">~2.5 Years</span>
+        </div>
+        <p class="timeline-org">Ecaps</p>
+        <p>
+          Managed <strong class="white">Kaspersky EDR</strong> deployment and tuning across a
+          large endpoint fleet, ran <strong class="white">patch management</strong> cycles to
+          close vulnerability windows, and administered <strong class="white">Microsoft 365
+          security</strong>
